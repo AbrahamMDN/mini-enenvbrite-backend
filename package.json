@@ -2,13 +2,16 @@
   "name": "mini-enenvbrite-backend",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon --exec node src/server.js",
+    "start": "node src/server.js",
+    "build": "echo 'No build step needed for Node ESM'"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["express", "nodemon", "JWT", "Token", "Server"],
+  "author": "Angel Medina",
   "license": "ISC",
-  "description": "",
+  "description": "Este es un proyecto dedicado al uso lúdico, para la creación de una boletera para eventos, cuyo desarrollo va orientado a un producto minimo viable para backend",
   "dependencies": {
     "@supabase/supabase-js": "^2.56.0",
     "bcryptjs": "^3.0.2",
