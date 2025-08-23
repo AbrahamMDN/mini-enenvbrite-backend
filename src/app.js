@@ -7,7 +7,7 @@ import morgan from 'morgan';
 import cookieParser from 'cookie-parser';
 import routes from './routes/index.js';
 import { env } from './config/env.js';
-import { errorHandler, notFoundHandler } from './middlewares/error.js';
+// import { errorHandler, notFoundHandler } from './middlewares/error.js';
 
 // Construcción de la lógica de la App
 export function buildApp() {
@@ -26,7 +26,7 @@ export function buildApp() {
     // Uso de APIs ubicadas en rutas
     app.use('/api', routes);
     // Uso de funciones para manejo de errores y al no encontrar las API solicitadas 
-    app.use(notFoundHandler);
-    app.use(errorHandler);
+  //  app.use(notFoundHandler);
+  //  app.use(errorHandler);
     return app;
 }
