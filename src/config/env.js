@@ -25,7 +25,7 @@ export const env = {
         serviceRoleKey: process.env.SUPABASE_SERVICE_ROLE_KEY,
         bucket: process.env.SUPABASE_BUCKET
     }
-}
+};
 
 // Manejo de errores por si no se encuentran las variables de entorno
 
