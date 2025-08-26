@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-// Esquema de asientos del avento con validación 
+// Esquema de asientos del evento con validación 
 export const seatMapSchema = z.object({
   type: z.enum(['grid','ga']).default('grid'),
   rows: z.number().int().min(1).max(200).default(10),
