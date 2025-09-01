@@ -13,7 +13,7 @@ const ticketSchema = new mongoose.Schema({
   seat: seatSchema,
   pricePaid: { type: Number, required: true },
   qrUrl: { type: String },
-  // Comprueba si se usó ya el ticket y en qué fecha
+  // Comprueba si se usó ya el ticket y en que fecha
   checkedInAt: { type: Date, default: null },
 }, { timestamps: true });
 
