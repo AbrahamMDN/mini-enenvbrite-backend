@@ -10,6 +10,8 @@ const router = Router();
 // Rutas de funciones para búsqueda y visualización de eventos
 router.get('/', EventCtrl.list);
 router.get('/:id', validateMongoIdParam('id'), EventCtrl.get);
+// Ruta para visualizar los asientos ocupados
+router.get('/:id/occupied', validateMongoIdParam('id'), EventCtrl.getOccupied);
 
 // Ruta para creación de eventos
 // Sólo los organizadores pueden crear eventos

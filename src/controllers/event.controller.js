@@ -23,3 +23,11 @@ export async function create(req, res, next) {
     res.status(201).json({ item });
   } catch (e) { next(e); }
 }
+
+// Función que actualiza los asientos ocupados
+export async function getOccupied(req, res, next) {
+  try {
+    const occupied = await Events.occupiedSeats(req.params.id);
+    res.json({ occupied });
+  } catch (e) { next(e); }
+}
